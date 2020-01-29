@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backGround">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_height="25sp"
+                    android:layout_width="wrap_content"
+                    android:text="Vibration"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_toLeftOf="@id/on_off_switch"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/on_off_switch"
+                    android:theme="@style/MySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:thumbTint="#000000"
+                    android:trackTint="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="40dp"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    app:showText="true"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- first -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/power"
+                    android:background="@drawable/powerbutton"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/mute"
+                    android:background="@drawable/mutebuttom"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Second -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/usb"
+                    android:background="@drawable/usbbuttom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/bluetooth"
+                    android:background="@drawable/bluetoothbuttom"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 3 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/plus"
+                    android:background="@drawable/plusbuttom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 4 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/previous"
+                    android:background="@drawable/previousbuttom"
+                    android:layout_marginRight="25dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/playpause"
+                    android:background="@drawable/playpausebuttom"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/next"
+                    android:background="@drawable/nextbuttom"
+                    android:layout_marginLeft="25dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 5 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/minus"
+                    android:background="@drawable/minusbuttom"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 6 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/optcoax"
+                    android:background="@drawable/optcoaxbuttom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/line12"
+                    android:background="@drawable/line12buttom"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 7 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/monitor"
+                    android:background="@drawable/monitorbuttom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/dynamic"
+                    android:background="@drawable/dynamicbuttom"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 8 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/classic"
+                    android:background="@drawable/classicbuttom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/vocal"
+                    android:background="@drawable/vocalbuttom"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- text -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110sp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/textEdifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                android:text="EDIFIER"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif"
+                android:textSize="19sp"
+                android:textColor="#ffffff"
+                android:text="S3000 Pro"
+                android:layout_below="@+id/textEdifier"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
